@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Reg Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Roboto+Slab:wght@400&display=swap"
+          rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body class="bg-grad">
+<main>
+    <form class="form-reg" action="">
+        <div class="head-block">
+            <h2>Event registration form</h2>
+        </div>
+        <div class="main_block">
+            <div class="input-row">
+                <div class="input-name">Name</div>
+                <div class="flex-col col-40">
+                    <input class="h-30 stylish" type="text" id="first-name" name="first_name">
+                    <label for="first-name">First Name</label>
+                </div>
+                <div class="flex-col col-40">
+                    <input class="h-30 stylish" type="text" id="last-name" name="last_name">
+                    <label for="last-name">Last Name</label>
+                </div>
+            </div>
+            <div class="input-row">
+                <div class="input-name">Company</div>
+                <div class="flex-col col-80">
+                    <input class="h-30 w-100 stylish" type="text" id="company-name" name="company_name">
+                </div>
+            </div>
+            <div class="input-row">
+                <div class="input-name">Email</div>
+                <div class="flex-col col-80">
+                    <input class="h-30 w-100 stylish" type="email" id="email" name="email"
+                           placeholder="example@gmail.com">
+                </div>
+            </div>
+            <div class="input-row">
+                <div class="input-name">Phone</div>
+                <div class="flex-col col-20">
+                    <input class="h-30 stylish" type="text" id="area-code" name="area_code">
+                    <label for="area-code">Area Code</label>
+                </div>
+                <div class="flex-col">
+                    <input class="h-30 stylish" type="text" id="phone-number" name="phone_number">
+                    <label for="phone-number">Phone Number</label>
+                </div>
+            </div>
+            <div class="input-row">
+                <div class="input-name">Subject</div>
+                <div class="flex-col col-80">
+                    <select class="h-30 w-100 stylish" name="subject" id="subject">
+                        <option value="">Choose option</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                </div>
+            </div>
+            <div class="radio-input">
+                <div class="mb-10">Are you an existing customer?</div>
+                <div class="input-row">
+                    <div class="col-20">
+                        <input type="radio" id="yes" name="existing-customer">
+                        <label for="yes">Yes</label>
+                    </div>
+                    <div class="col-20">
+                        <input type="radio" id="no" name="existing-customer">
+                        <label for="no">No</label>
+                    </div>
+                </div>
+            </div>
+            <div class="input-row">
+                <input class="btn-red" type="submit" name="submit" value="Register">
+            </div>
+        </div>
+        </div>
+    </form>
+
+</main>
+</body>
+</html>
